@@ -4,4 +4,5 @@ import './registerServiceWorker'
 import router from './router'
 import './firebase'
 
-createApp(App).use(router).mount('#app')
+const app = createApp(App)
+app.use(router).mount('#app')
